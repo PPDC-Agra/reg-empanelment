@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PPDC-Agra</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="bootstrap/bootstrap.css" rel="stylesheet" />
+		<link href="../src/bootstrap-wizard.css" rel="stylesheet" />
+		<link href="chosen/chosen.css" rel="stylesheet" />
+		<style type="text/css">
+			.wizard-modal p {
+				margin: 0 0 10px;
+				padding: 0;
+			}
+
+			#wizard-ns-detail-servers, .wizard-additional-servers {
+				font-size: 12px;
+				margin-top: 10px;
+				margin-left: 15px;
+			}
+			#wizard-ns-detail-servers > li, .wizard-additional-servers li {
+				line-height: 20px;
+				list-style-type: none;
+			}
+			#wizard-ns-detail-servers > li > img {
+				padding-right: 5px;
+			}
+
+			.wizard-modal .chzn-container .chzn-results {
+				max-height: 150px;
+			}
+			.wizard-addl-subsection {
+				margin-bottom: 40px;
+			}
+			.create-server-agent-key {
+				margin-left: 15px; 
+				width: 90%;
+			}
+		</style>
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv-3.7.0.js"></script>
+		<script src="js/respond-1.3.0.min.js"></script>
+		<![endif]-->
+	</head>
+	<body style="padding:230px; border-left-width: 100%">
+
+		
+		<button id="open-wizard" class="btn btn-primary">
+			Register now
+		</button>
+
+		<div class="wizard" id="satellite-wizard" data-title="Course Registrations">
+
+			<!-- Step 1 Name & FQDN -->
+			
+			<div class="wizard-card wizard-card-overlay">
+				<h3>Course Details</h3>
+
+				<div class="wizard-input-section">
+					<select name="notification" class="wizard-ns-select chzn-select form-control" data-placeholder="Select place of training" style="width:250px;">
+						<option value=""></option>
+						<option></option>
+						<option></option>
+						<option> </option>
+						<option></option>
+						<option></option>	
+						<option></option>	
+						<option></option>	
+					
+						
+						
+						</select>
+					<br></br>
+					
+					<select name="notification" class="wizard-ns-select chzn-select form-control" data-placeholder="Select course" style="width:250px;">
+						<option value=""></option>
+						<option>Gold Appraisal</option>
+						<option>Microsoft Project 2013</option>
+						<option>Digital Marketing</option>
+						<option>Logistics Supply Chain Professionals</option>
+						<option>Export Promotion Procedure & Documentation </option>
+						<option>Project Management Professional</option>
+						<option>Six Sigma Black Belt</option>	
+						<option>Six Sigma Yellow Belt</option>	
+						<option>Six Sigma Green Belt</option>	
+					
+						
+						</select>
+					</div>
+<div style="padding:0 15px;"><!-- offset row negative padding -->
+    <div class="row">
+      <div class="col-md-4">
+	  <div class="well well-lg">
+	 
+	 </div> 
+	  </div>
+      <div class="col-md-4">
+	  <div class="well well-lg"></div>
+	  </div>
+ 
+<div class="col-md-4">
+	  <div class="well well-lg">
+	  
+	  
+	  
+	  </div>
+	  </div>
+ 
+ </div>
+  
+				
+			</div>
+			
+			
+			<div class="wizard-card" data-cardname="group">
+				<h3>Personal Details</h3>
+<div style="padding:0 15px;"
+        ><!-- offset row negative padding -->
+    <div class="row">
+
+
+        <div class="col-md-6">
+				<div class="wizard-input-section">
+<div class="control-group">
+    <label for="focusedInput">First Name</label>
+    <input type="text" class="form-control" id="focusedInput" placeholder="Enter First Name">
+                                                    </div>
+				</div>
+	  </div>
+      <div class="col-md-6">
+<div class="wizard-input-section">
+<div class="control-group">
+    <label for="focusedInput">Last Name</label>
+    <input type="text" class="form-control" id="focusedInput" placeholder="Enter Last Name">          </div>
+				</div>	  </div>
+				</div>
+    <div style="padding:-1 15px;">
+	
+	<div class="row">
+
+
+      <div class="col-md-6">
+				<div class="wizard-input-section">
+
+
+                    <div class="control-group">
+                        <label for="focusedInput">Father/Spouse's Name</label>
+                        <input type="text" class="form-control" id="focusedInput" placeholder="Enter Name">
+                    </div>
+
+	</div>
+
+
+	  </div>
+      <div class="col-md-6">
+<div class="wizard-input-section">
+    <div class="control-group">
+        <label class="control-label" for="focusedInput">Date of Birth</label>
+<input type="date">
+
+
+
+    </div>
+		</div>
+	  </div>
+	  </div>
+
+
+    <div class="row">
+      <div class="col-md-6">
+				<div class="wizard-input-section">
+                    <div class="control-group">
+                        <label class="control-label" for="focusedInput">Gender</label>
+                        <select class="form-control" style= width:180px>
+                            <option>Select</option>
+                            <option>Female</option>
+                            <option>Male</option>
+                            <select>
+
+                    </div>
+
+
+                </div>
+	  </div>
+      <div class="col-md-6">
+<div class="wizard-input-section">
+    <div class="control-group">
+        <label class="control-label" for="focusedInput">Maritial Status</label>
+        <select class="form-control" style= width:180px>
+            <option class="icon-fe">Select</option>
+            <option>Married</option>
+            <option>Unmarried</option>
+            <select>
+
+    </div>
+
+</div>
+
+
+
+
+
+</div>
+				</div>
+	  </div>
+
+    <div class="row">
+      <div class="col-md-6">
+				<div class="wizard-input-section">
+                    <div class="control-group">
+                        <label class="control-label" for="focusedInput">Community</label>
+                        <select class="form-control" style= width:180px>
+                            <option>Select</option>
+                            <option>SC</option>
+                            <option>ST</option>
+                            <option>OBC</option>
+                            <option>General</option>
+                            <select>
+
+                    </div>
+
+
+                                                 </div>
+				</div>
+
+
+      <div class="col-md-6">
+<div class="wizard-input-section">
+    <div class="control-group">
+
+        <label class="control-label" for="focusedInput">Other Status</label>
+
+        <select class="form-control" style= width:180px>
+            <option>Optional</option>
+            <option>P.H</option>
+            <option>Minority</option>
+            <option>Ex-Servicemen</option>
+
+        </select>
+
+
+
+
+    </div>
+
+</div>
+
+	  </div>
+
+ </div>
+
+			</div>
+
+
+<div class="wizard-card" data-cardname="group">
+<h3>Professional Details</h3>
+<div style="padding:0 15px;"><!-- offset row negative padding -->
+<div class="row">
+
+
+    <div class="col-md-6">
+        <div class="wizard-input-section">
+            <div class="control-group">
+                <label class="control-label" for="focusedInput">Educational Qualification</label>
+
+                <select class="form-control" style= width:180px>
+                    <option>Highest Qualification</option>
+                    <option>High School</option>
+                    <option>Bachelor's Degree</option>
+                    <option>Master's Degree</option>
+                    <option>M.Phil</option>
+                    <option>Ph.D</option>
+
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="wizard-input-section">
+            <div class="control-group">
+                <label for="focusedInput">University/Institution</label>
+                <input type="text" class="form-control" id="focusedInput" placeholder="Name of University/Institute">
+            </div>
+        </div>	  </div>
+</div>
+<div style="padding:-1 15px;">
+
+    <div class="row">
+
+
+        <div class="col-md-6">
+            <div class="wizard-input-section">
+                <div class="control-group">
+
+                    <label for="focusedInput">Field of Specialization</label>
+                    <input type="text" class="form-control" id="focusedInput" placeholder="eg:Production Engineering">
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="col-md-6">
+            <div class="wizard-input-section">
+
+
+                <div class="control-group">
+                    <label class="control-label" for="focusedInput">Year of Pass-out</label>
+                    <select class="form-control" style= width:180px>
+                        <option></option>
+                        <option>Female</option>
+                        <option>Male</option>
+                        <select>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="wizard-input-section">
+                <div class="control-group">
+
+
+                    <label class="control-label" for="focusedInput">Employement Status</label>
+
+                    <select class="form-control" style= width:180px>
+                        <option>Select current status</option>
+                        <option>Employed</option>
+                        <option>Unemployed</option>
+                        <option>Self-Employed</option>
+
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="wizard-input-section">
+                <div class="control-group">
+                    <label class="control-label" for="focusedInput">Field/Industry</label>
+                    <select class="form-control" style= width:180px>
+                        <option>Select your field</option>
+                        <option>Consultancy / Training</option>
+                        <option>Textile Manufacturing</option>
+                        <option>Food Manufaturing</option>
+                        <option>Govt Sevice</option>
+                        <option>Education</option>
+                        <option>Medical</option>
+                        <option>Leather</option>
+                        <option>Hospitality / Hotel</option>
+                        <option>Pharma</option>
+                        <option>Automobile</option>
+                        <option>ITeS / BPOs / KPOs</option>
+                        <option>IT</option>
+                        <option>Foundry</option>
+                        <option>Forging</option>
+                        <option>Forging Press and Die casting</option>
+                        <option>Other Service sector</option>
+                        <option>Other Manufaturing sector</option>
+                        <select>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="wizard-input-section">
+
+
+                <div class="control-group">
+                    <label class="control-label" for="focusedInput">Experience</label>
+
+
+                            <INPUT TYPE="NUMBER" MIN="0" MAX="10" STEP="2" VALUE="6" SIZE="6">
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-md-6">
+            <div class="wizard-input-section">
+                <div class="control-group">
+
+
+                    <label for="focusedInput">Company/Organization</label>
+                    <input type="text" class="form-control" id="focusedInput" placeholder="Enter Name">
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</div>
+
+<div class="wizard-card" data-cardname="group">
+    <h3>Contact Details</h3>
+    <div style="padding:0 15px;"><!-- offset row negative padding -->
+        <div class="row">
+
+
+            <div class="col-md-6">
+                <div class="wizard-input-section">
+                    <div class="control-group">
+                        <label for="focusedInput">Mobile Number</label>
+                        <input type="tel" class="form-control" id="focusedInput" placeholder="Enter your Mobile number" required="required">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="wizard-input-section">
+                    <div class="control-group">
+                        <label for="focusedInput">Phone Number</label>
+                        <input type="text" class="form-control" id="focusedInput" placeholder="Work phone/Landline">
+                    </div>
+                </div>	  </div>
+        </div>
+        <div style="padding:-1 15px;">
+
+            <div class="row">
+
+
+                <div class="col-md-6">
+                    <div class="wizard-input-section">
+
+                        <div class="control-group">
+                            <label for="focusedInput">Email</label>
+                            <input type="email" name="email" class="form-control" id="focusedInput" required="required" placeholder="Enter a Valid Email address">
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="col-md-6">
+                    <div class="wizard-input-section">
+                        <div class="control-group">
+                            <label class="control-label" for="focusedInput">State</label>
+                            <select class="form-control" style= width:180px>
+                                <option>Select State</option>
+                                <option>Andaman and Nicobar Islands*</option>
+                                <option>Andhra Pradesh</option>
+                                <option>Arunachal Pradesh</option>
+                                <option>Assam</option>
+                                <option>Bihar</option>
+                                <option>Chandigarh</option>
+                                <option>Chhattisgarh</option>
+                                <option>Dadra and Nagar Haveli*</option>
+                                <option>Daman and Diu*</option>
+                                <option>Delhi*</option>
+                                <option>Goa</option>
+                                <option>Gujarat</option>
+                                <option>Haryana</option>
+                                <option>Himachal Pradesh</option>
+                                <option>Jammu and Kashmir</option>
+                                <option>Jharkhand</option>
+                                <option>Karnataka</option>
+                                <option>Kerala</option>
+                                <option>Lakshadweep*</option>
+                                <option>Madhya Pradesh</option>
+                                <option>Maharashtra</option>
+                                <option>Manipur</option>
+                                <option>Meghalaya</option>
+                                <option>Mizoram</option>
+                                <option>Nagaland</option>
+                                <option>Orissa</option>
+                                <option>Pondicherry*</option>
+                                <option>Punjab</option>
+                                <option>Rajasthan</option>
+                                <option>Sikkim</option>
+                                <option>Tamil Nadu</option>
+                                <option>Tripura</option>
+                                <option>Uttaranchal</option>
+                                <option>Uttar Pradesh</option>
+                                <option>West Bengal</option>
+
+                                <select>
+
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="wizard-input-section">
+                        <div class="control-group">
+                            <label for="focusedInput">City</label>
+                            <input type="text" class="form-control" id="focusedInput" placeholder="Enter City">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="wizard-input-section">
+
+                        <div class="control-group">
+
+
+                            <label for="focusedInput">Pin code</label>
+                            <input type="text" class="form-control" id="focusedInput" placeholder="Enter Postal Code">
+
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="wizard-input-section">
+
+                        <div class="control-group">
+                            <label for="focusedInput" data-placeholder="Door Number/street name">Street Address</label>
+
+                            <textarea my="params" placeholder="Flat Number/Door number Street name                  Locality/Area" class="form-control" rows="3"></textarea>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="col-md-6">
+                    <div class="wizard-input-section">
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="wizard-card">
+				<h3>Payment Options</h3>
+
+				<div class="wizard-input-section">
+				
+					<div class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Select one<span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="#">Credit/Debit</a></li>
+							<li><a href="#">Paypal</a></li>
+							<li><a href="#">Bank Transfer</a></li>
+							<li><a href="#">Demand Draft</a></li>
+							
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="wizard-input-section">
+				
+					<div class="form-group">
+						<input type="text" class="create-server-agent-key form-control" placeholder="" data-validate="">
+					</div>
+				</div>
+
+
+				<div class="wizard-error">
+					<div class="alert alert-error">
+						<strong>There was a problem</strong> with your submission.
+						Please correct the errors and re-submit.
+					</div>
+				</div>
+	
+				<div class="wizard-failure">
+					<div class="alert alert-error">
+						<strong>There was a problem</strong> submitting the form.
+						Please try again in a minute.
+					</div>
+				</div>
+	
+				<div class="wizard-success">
+					<div class="alert alert-success">
+						<span class="create-server-name"></span>Registered <strong>Successfully.</strong>
+					</div>
+	
+					<a class="btn btn-default create-another-server">Register for another course</a>
+					<span style="padding:0 10px">or</span>
+					<a class="btn btn-success im-done">Done</a>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/jquery-2.0.3.min.js" type="text/javascript"></script>
+		<script src="chosen/chosen.jquery.js"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="js/prettify.js" type="text/javascript"></script>
+		<script src="../src/bootstrap-wizard.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+			$(document).ready(function() {
+				$.fn.wizard.logging = true;
+				var wizard = $('#satellite-wizard').wizard({
+					keyboard : false,
+					contentHeight : 400,
+					contentWidth : 700,
+					backdrop: 'static'
+				});
+				
+				$(".chzn-select").chosen();
+
+				$('#fqdn').on('input', function() {
+					if ($(this).val().length != 0) {
+						$('#ip').val('').attr('disabled', 'disabled');
+						$('#fqdn, #ip').parents('.form-group').removeClass('has-error has-success');
+					} else {
+						$('#ip').val('').removeAttr('disabled');
+					}
+				});
+
+				var pattern = /\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\b/;
+				x = 46;
+
+				$('#ip').on('input', function() {
+					if ($(this).val().length != 0) {
+						$('#fqdn').val('').attr('disabled', 'disabled');
+					} else {
+						$('#fqdn').val('').removeAttr('disabled');
+					}
+				}).keypress(function(e) {
+					if (e.which != 8 && e.which != 0 && e.which != x && (e.which < 48 || e.which > 57)) {
+						console.log(e.which);
+						return false;
+					}
+				}).keyup(function() {
+					var $this = $(this);
+					if (!pattern.test($this.val())) {
+						//$('#validate_ip').text('Not Valid IP');
+						console.log('Not Valid IP');
+						$this.parents('.form-group').removeClass('has-error has-success').addClass('has-error');
+						while ($this.val().indexOf("..") !== -1) {
+							$this.val($this.val().replace('..', '.'));
+						}
+						x = 46;
+					} else {
+						x = 0;
+						var lastChar = $this.val().substr($this.val().length - 1);
+						if (lastChar == '.') {
+							$this.val($this.val().slice(0, -1));
+						}
+						var ip = $this.val().split('.');
+						if (ip.length == 4) {
+							//$('#validate_ip').text('Valid IP');
+							console.log('Valid IP');
+							$this.parents('.form-group').removeClass('has-error').addClass('has-success');
+						}
+					}
+				});
+
+				wizard.on('closed', function() {
+					wizard.reset();
+				});
+
+				wizard.on("reset", function() {
+					wizard.modal.find(':input').val('').removeAttr('disabled');
+					wizard.modal.find('.form-group').removeClass('has-error').removeClass('has-succes');
+					wizard.modal.find('#fqdn').data('is-valid', 0).data('lookup', 0);
+				});
+
+				wizard.on("submit", function(wizard) {
+					var submit = {
+						"hostname": $("#new-server-fqdn").val()
+					};
+					
+					this.log('seralize()');
+					this.log(this.serialize());
+					this.log('serializeArray()');
+					this.log(this.serializeArray());
+			
+					setTimeout(function() {
+						wizard.trigger("success");
+						wizard.hideButtons();
+						wizard._submitting = false;
+						wizard.showSubmitCard("success");
+						wizard.updateProgressBar(0);
+					}, 2000);
+				});
+				
+				wizard.el.find(".wizard-success .im-done").click(function() {
+					wizard.hide();
+					setTimeout(function() {
+						wizard.reset();	
+					}, 250);
+					
+				});
+			
+				wizard.el.find(".wizard-success .create-another-server").click(function() {
+					wizard.reset();
+				});
+			
+				$(".wizard-group-list").click(function() {
+					alert("Disabled for demo.");
+				});
+
+				$('#open-wizard').click(function(e) {
+					e.preventDefault();
+					wizard.show();
+				});
+			});
+
+			function validateServerLabel(el) {
+				var name = el.val();
+				var retValue = {};
+
+				if (name == "") {
+					retValue.status = false;
+					retValue.msg = "Please enter a label";
+				} else {
+					retValue.status = true;
+				}
+
+				return retValue;
+			};
+
+			function validateFQDN(el) {
+				var $this = $(el);
+				var retValue = {};
+
+				if ($this.is(':disabled')) {
+					// FQDN Disabled
+					retValue.status = true;
+				} else {
+					if ($this.data('lookup') === 0) {
+						retValue.status = false;
+						retValue.msg = "Preform lookup first";
+					} else {
+						if ($this.data('is-valid') === 0) {
+							retValue.status = false;
+							retValue.msg = "Lookup Failed";
+						} else {
+							retValue.status = true;
+						}
+					}
+				}
+
+				return retValue;
+			};
+
+			function lookup() {
+				// Normally a ajax call to the server to preform a lookup
+				$('#fqdn').data('lookup', 1);
+				$('#fqdn').data('is-valid', 1);
+				$('#ip').val('127.0.0.1');
+			};
+		</script>
+	</body>
+</html>
